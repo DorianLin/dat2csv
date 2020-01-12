@@ -48,7 +48,6 @@ void convert_file(string dat_file){
 	break;
 
 	case TDB_TICK_QUOTE_TYPE:
-		//f_out << "交易所代码,万得代码,日期,时间,成交价,成交量,成交额,成交笔数,IOPV,成交标志,BS标志,当日累计成交量,当日成交额,最高,最低,开盘,前收盘,结算价,持仓量,虚实度,昨结算,昨持仓,加权平均叫卖价,加权平均叫买价,叫卖总量,叫买总量,档1,叫卖价1,叫卖量1,叫买价1,叫买量1,...,档n,叫卖价n,叫卖量n,叫买价n,叫买量n，不加权指数，品种总数，上涨品种数，下跌品种数，持平品种数" << endl;
 		f_out << "Code,Date,Time,LastPrice,volume,turnover,NumOfTrade,High,Low,Open,PreClosePrice,AskWAvgPrice,BidWAvgPrice,TotalAskVol,TotalBidVol,SP1,SV1,BP1,BV1,SP2,SV2,BP2,BV2,SP3,SV3,BP3,BV3,SP4,SV4,BP4,BV4,SP5,SV5,BP5,BV5,SP6,SV6,BP6,BV6,SP7,SV7,BP7,BV7,SP8,SV8,BP8,BV8,SP9,SV9,BP9,BV9,SP10,SV10,BP10,BV10" << endl;
 		for (int i = 0; i < f_header.data_count; ++i) {
 			tdb_tick_data data;
